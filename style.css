@@ -1,0 +1,92 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+@media (max-width: 75em) {
+  html {
+    font-size: 57%;
+  }
+}
+@media (max-width: 56.25em) {
+  html {
+    font-size: 52%;
+  }
+}
+
+@media (max-width: 37.5em) {
+  html {
+    font-size: 48%;
+  }
+}
+@media (min-width: 112em) {
+  html {
+    font-size: 70%;
+  }
+}
+h2 {
+  text-align: center;
+  font-size: 5rem;
+  margin-bottom: 3rem;
+}
+main {
+  background-color: rgb(105, 100, 100);
+  width: 28%;
+  height: 48rem;
+  padding: 3rem 2rem;
+  margin: 0 auto;
+  position: relative;
+}
+@media (max-width: 112em) {
+  main {
+    width: 60%;
+  }
+}
+
+@media (max-width: 56.25em) {
+  main {
+    width: 70%;
+  }
+}
+@media (max-width: 37.5em) {
+  main {
+    width: 80%;
+  }
+}
+
+.calculator {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  background-color: black;
+  position: absolute;
+  text-align: center;
+}
+.key {
+  width: 25%;
+  color: white;
+  font-size: 6rem;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.key:hover {
+  background-color: grey;
+  color: black;
+}
+
+#screen {
+  flex-basis: 1;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  font-size: 6rem;
+  color: rgb(55, 53, 53);
+  text-align: left;
+  padding: 0 4rem;
+  border: 1px solid white;
+}
